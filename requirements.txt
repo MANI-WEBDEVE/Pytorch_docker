@@ -1,0 +1,14 @@
+# requirements.txt
+pandas
+numpy
+matplotlib
+scikit-learn
+opencv-python
+transformers 
+sentence-transformers
+bitsandbytes
+accelerate
+tqdm
+PyMuPDF
+# flash-attn --no-build-isolation
+# torch, torchvision, torchaudio MAT likhna! Wo base image mein already hain.

@@ -1,0 +1,17 @@
+{
+  "name": "PyTorch GPU Project",
+  "image": "pytorch/pytorch:2.1.0-cuda11.8-cudnn8-devel",
+  "runArgs": ["--gpus", "all"],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt"
+}
