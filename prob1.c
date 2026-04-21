@@ -38,6 +38,8 @@ int main() {
         for (int j = i - 1; j >= 0; j--) {
             printf("%d\n", arr[j]);
         }
+    } else{
+        printf("Number is not Armstrong\n");
     }
     
     return 0;
